@@ -160,12 +160,17 @@ wexa-graph-app/
 
 ### 1. Clone and install
 
+Each of the three JS folders (`backend`, `frontend`, and `data`) has its
+own dependencies — install all three, or the seed script will fail with
+`Cannot find module 'dotenv'` even though `backend` installed fine.
+
 ```bash
 git clone <your-repo-url>
 cd wexa-graph-app
 
 cd backend && npm install
 cd ../frontend && npm install
+cd ../data && npm init -y && npm install dotenv neo4j-driver
 ```
 
 ### 2. Configure environment variables
@@ -185,6 +190,25 @@ COGNODB_DATABASE=neo4j
 PORT=4000
 CORS_ORIGIN=http://localhost:5173
 ```
+
+> **Using a hosted CognoDB/Aura-style free instance instead of local?**
+> Get your exact values from the credentials file offered for download
+> the moment your instance is created (only shown once) — don't guess
+> them. In particular:
+> - `COGNODB_URI` uses `neo4j+s://` (not `bolt://`) and looks like
+>   `neo4j+s://<instance-id>.databases.neo4j.io`
+> - `COGNODB_USER` may **not** be the literal word `neo4j` — free
+>   instances often generate a random username (e.g. `cf4dd388`)
+> - `COGNODB_DATABASE` may also **not** be `neo4j` — it's frequently
+>   the same string as your instance ID. Using the wrong value here
+>   produces `Unable to get a routing table for database 'neo4j'
+>   because this database does not exist` even though the connection
+>   itself succeeded.
+> - A freshly created free instance can take **up to a minute or two**
+>   after showing "Running" before it actually accepts connections.
+>   If you see a connectivity error immediately after creating one,
+>   wait ~60 seconds and retry before assuming something is
+>   misconfigured.
 
 Edit `frontend/.env`:
 
@@ -218,6 +242,23 @@ cd frontend && npm run dev
 Visit `http://localhost:5173`. The API health check is at
 `http://localhost:4000/api/health` and reports both API liveness and
 CognoDB reachability.
+
+> Keep **both** terminals (backend and frontend) open and running for
+> as long as you're using the app. If either one is stopped — or your
+> machine sleeps and kills the process — the frontend will show a red
+> "CognoDB is currently unreachable" banner even if the database
+> itself is perfectly healthy. Just restart `npm run dev` in the
+> terminal that stopped.
+
+### Troubleshooting quick reference
+
+| Symptom | Likely cause | Fix |
+|---|---|---|
+| `Cannot find module 'dotenv'` when running `npm run seed` | `data/` folder has no `node_modules` of its own | `cd data && npm install dotenv neo4j-driver` |
+| `Unable to get a routing table for database 'neo4j' because this database does not exist` | `COGNODB_DATABASE` is wrong (often needs to be your instance ID, not `neo4j`) | Check the exact value in your instance's downloaded credentials file |
+| `Failed to connect to server` right after creating a hosted instance | Instance hasn't finished warming up yet | Wait ~60 seconds and retry |
+| Frontend shows "CognoDB is currently unreachable" | Backend process (or frontend process) isn't running | Restart `npm run dev` in the relevant terminal |
+| Graph page crashes with `node not found: <id>` | (Fixed in this codebase) D3 node/link id mismatch | Already handled in `backend/src/routes/graph.js` — pull latest |
 
 ## 6. API reference
 
@@ -262,6 +303,8 @@ user input into a Cypher string.
 
 ## 9. Screenshots
 
+> Add screenshots to `docs/screenshots/` and reference them here, e.g.:
+>
 > ![Developer Directory](docs/screenshots/directory.png)
 > ![Project Explorer](docs/screenshots/projects.png)
 > ![Skill Graph](docs/screenshots/graph.png)
