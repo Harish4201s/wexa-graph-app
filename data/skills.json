@@ -1,0 +1,17 @@
+[
+  { "id": "skill-01", "name": "JavaScript", "category": "Language" },
+  { "id": "skill-02", "name": "TypeScript", "category": "Language" },
+  { "id": "skill-03", "name": "Python", "category": "Language" },
+  { "id": "skill-04", "name": "Go", "category": "Language" },
+  { "id": "skill-05", "name": "React", "category": "Frontend" },
+  { "id": "skill-06", "name": "Node.js", "category": "Backend" },
+  { "id": "skill-07", "name": "Cypher / Graph Modeling", "category": "Database" },
+  { "id": "skill-08", "name": "PostgreSQL", "category": "Database" },
+  { "id": "skill-09", "name": "Kubernetes", "category": "Infra" },
+  { "id": "skill-10", "name": "AWS", "category": "Infra" },
+  { "id": "skill-11", "name": "Machine Learning", "category": "Data" },
+  { "id": "skill-12", "name": "Flutter", "category": "Mobile" },
+  { "id": "skill-13", "name": "Security / AppSec", "category": "Security" },
+  { "id": "skill-14", "name": "UI/UX Design", "category": "Design" },
+  { "id": "skill-15", "name": "Data Engineering", "category": "Data" }
+]

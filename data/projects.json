@@ -1,0 +1,10 @@
+[
+  { "id": "proj-01", "name": "AtlasPay", "description": "Cross-border micropayments platform.", "status": "active", "startDate": "2024-02-01" },
+  { "id": "proj-02", "name": "GraphNest", "description": "Internal graph-database tooling for analytics teams.", "status": "active", "startDate": "2024-06-10" },
+  { "id": "proj-03", "name": "PixelForge", "description": "Component library and design system.", "status": "completed", "startDate": "2023-09-15" },
+  { "id": "proj-04", "name": "SentinelGuard", "description": "Real-time fraud detection service.", "status": "active", "startDate": "2025-01-20" },
+  { "id": "proj-05", "name": "SwiftRoute", "description": "Logistics route-optimization engine.", "status": "completed", "startDate": "2023-04-05" },
+  { "id": "proj-06", "name": "EchoChat", "description": "In-app messaging and notifications platform.", "status": "active", "startDate": "2024-11-01" },
+  { "id": "proj-07", "name": "NovaMobile", "description": "Cross-platform mobile shell for consumer apps.", "status": "active", "startDate": "2025-03-12" },
+  { "id": "proj-08", "name": "DataLoom", "description": "ETL and warehousing pipeline suite.", "status": "completed", "startDate": "2023-12-01" }
+]

@@ -1,0 +1,14 @@
+[
+  { "id": "dev-01", "name": "Ananya Rao", "title": "Backend Engineer", "location": "Chennai, IN", "avatarColor": "#6366F1", "bio": "Distributed systems enthusiast, ex-fintech." },
+  { "id": "dev-02", "name": "Wei Chen", "title": "Frontend Engineer", "location": "Singapore", "avatarColor": "#F59E0B", "bio": "React and design systems." },
+  { "id": "dev-03", "name": "Maria Gonzalez", "title": "Data Engineer", "location": "Madrid, ES", "avatarColor": "#10B981", "bio": "Pipelines, warehouses, and graph modeling." },
+  { "id": "dev-04", "name": "Samuel Okafor", "title": "Full-Stack Engineer", "location": "Lagos, NG", "avatarColor": "#EF4444", "bio": "Node.js and cloud infra." },
+  { "id": "dev-05", "name": "Priya Nair", "title": "ML Engineer", "location": "Bengaluru, IN", "avatarColor": "#8B5CF6", "bio": "NLP and recommendation systems." },
+  { "id": "dev-06", "name": "Jonas Berg", "title": "DevOps Engineer", "location": "Stockholm, SE", "avatarColor": "#0EA5E9", "bio": "Kubernetes and observability." },
+  { "id": "dev-07", "name": "Fatima Al-Sayed", "title": "Mobile Engineer", "location": "Dubai, AE", "avatarColor": "#EC4899", "bio": "iOS/Android, Flutter convert." },
+  { "id": "dev-08", "name": "Liam O'Brien", "title": "Backend Engineer", "location": "Dublin, IE", "avatarColor": "#22C55E", "bio": "Go and event-driven architectures." },
+  { "id": "dev-09", "name": "Sofia Rossi", "title": "Product Engineer", "location": "Milan, IT", "avatarColor": "#F97316", "bio": "0-to-1 products, growth engineering." },
+  { "id": "dev-10", "name": "Kenji Tanaka", "title": "Security Engineer", "location": "Tokyo, JP", "avatarColor": "#14B8A6", "bio": "AppSec and threat modeling." },
+  { "id": "dev-11", "name": "Grace Kim", "title": "Frontend Engineer", "location": "Seoul, KR", "avatarColor": "#A855F7", "bio": "Design engineering, motion & a11y." },
+  { "id": "dev-12", "name": "David Miller", "title": "Data Scientist", "location": "Austin, US", "avatarColor": "#3B82F6", "bio": "Experimentation and causal inference." }
+]
