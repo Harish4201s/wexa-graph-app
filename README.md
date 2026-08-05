@@ -262,8 +262,6 @@ user input into a Cypher string.
 
 ## 9. Screenshots
 
-> Add screenshots to `docs/screenshots/` and reference them here, e.g.:
->
 > ![Developer Directory](docs/screenshots/directory.png)
 > ![Project Explorer](docs/screenshots/projects.png)
 > ![Skill Graph](docs/screenshots/graph.png)
