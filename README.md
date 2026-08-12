@@ -12,7 +12,7 @@ based on my network?"*
 |---|---|
 | **Live demo (frontend)** | [https://wexa-graph-app-gray.vercel.app](https://wexa-graph-app-gray.vercel.app) |
 | **Live demo (API)** | [https://wexa-graph-app-r73z.onrender.com](https://wexa-graph-app-r73z.onrender.com) |
-| **Screen recording** | [Watch here](https://youtu.be/your-video-id) |
+| **Screen recording** | [Watch here](https://youtu.be/Ngo8hnRcnTk) |
 
 ---
 
@@ -311,9 +311,9 @@ user input into a Cypher string.
 
 ## 10. Screen recording
 
-> Add a short (2-4 min) walkthrough covering: the directory, the
-> shortest-path finder, the multi-hop project/skill matcher, and the
-> live D3 graph visualization. Link it at the top of this README.
+[Watch the 2-4 minute walkthrough](https://youtu.be/Ngo8hnRcnTk) — covers the developer
+directory, shortest-path finder, multi-hop project/skill matcher, and the
+live D3 graph visualization.
 
 ## 11. Tech stack summary
 
