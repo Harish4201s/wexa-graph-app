@@ -10,9 +10,9 @@ based on my network?"*
 
 | | |
 |---|---|
-| **Live demo (frontend)** | `<add your Vercel/Netlify URL here>` |
-| **Live demo (API)** | `<add your Render/Railway URL here>` |
-| **Screen recording** | `<add your Loom/YouTube link here>` |
+| **Live demo (frontend)** | [https://wexa-graph-app-gray.vercel.app](https://wexa-graph-app-gray.vercel.app) |
+| **Live demo (API)** | [https://wexa-graph-app-r73z.onrender.com](https://wexa-graph-app-r73z.onrender.com) |
+| **Screen recording** | [Watch here](https://youtu.be/your-video-id) |
 
 ---
 
